@@ -1,0 +1,26 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <p class="eyebrow">PUBLIC INFORMATION BULLETIN · CONTINUOUSLY IN EFFECT</p>
+  <h1>Securing yesterday.<br><em>Today. Tomorrow.</em></h1>
+  <p class="lead">An independent institution dedicated to the responsible preservation of existing conditions and the orderly prevention of unwarranted progress.</p>
+  <a class="action" href="{{ '/charter/' | relative_url }}">Review the founding charter <span aria-hidden="true">↗</span></a>
+</section>
+<section class="section">
+  <div class="section-header"><h2>Institutional divisions</h2><span>PERMANENT OPERATIONS</span></div>
+  <div class="tiles">
+    <a class="tile" href="{{ '/departments/' | relative_url }}"><small>DIVISION 01</small><h3>Office of General Inaction</h3><p>Overseeing the continuous postponement of unnecessary initiatives.</p><span>Read more →</span></a>
+    <a class="tile" href="{{ '/departments/' | relative_url }}"><small>DIVISION 02</small><h3>Committee for Preservation</h3><p>Defending established arrangements against potentially useful alternatives.</p><span>Read more →</span></a>
+    <a class="tile" href="{{ '/membership/' | relative_url }}"><small>DIVISION 03</small><h3>Directorate of Membership</h3><p>Formally documenting expressions of passive institutional support.</p><span>Read more →</span></a>
+  </div>
+</section>
+<section class="section">
+  <div class="section-header"><h2>Latest official publications</h2><a href="{{ '/publications/' | relative_url }}">Complete archive →</a></div>
+  {% for post in site.posts limit:4 %}
+    <a class="story-link" href="{{ post.url | relative_url }}"><div><h3>{{ post.title | escape }}</h3><span>PUBLICATION · {{ post.date | date: '%-d %B %Y' }}</span></div><span aria-hidden="true">↗</span></a>
+  {% else %}
+    <p>There are no publications presently scheduled for public release.</p>
+  {% endfor %}
+</section>

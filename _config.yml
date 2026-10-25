@@ -1,0 +1,18 @@
+title: "The Status Quo Immobilization Movement"
+description: "An independent institution for the preservation of existing conditions."
+url: ""
+baseurl: ""
+permalink: /publications/:title/
+markdown: kramdown
+timezone: Australia/Sydney
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default

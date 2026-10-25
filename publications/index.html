@@ -1,0 +1,12 @@
+---
+layout: default
+title: Publications
+---
+<section class="page-heading"><p class="eyebrow">OFFICIAL RECORD</p><h1>Publications</h1><p>Statements, correspondence, literary accounts and other documents released by the Secretariat.</p></section>
+<section class="section">
+  {% for post in site.posts %}
+    <a class="story-link" href="{{ post.url | relative_url }}"><div><h3>{{ post.title | escape }}</h3><span>ISSUED {{ post.date | date: '%-d %B %Y' }}</span></div><span aria-hidden="true">↗</span></a>
+  {% else %}
+    <p>Publications are undergoing routine administrative review.</p>
+  {% endfor %}
+</section>

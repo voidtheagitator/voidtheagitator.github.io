@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="post">
+  <p class="eyebrow"><a href="{{ '/publications/' | relative_url }}">Official Publications</a> · {{ page.date | date: '%-d %B %Y' }}</p>
+  <h1>{{ page.title | escape }}</h1>
+  <div class="rule"></div>
+  <div class="article-body">{{ content }}</div>
+  <div class="article-end">◼</div>
+  <p class="backlink"><a href="{{ '/publications/' | relative_url }}">← Return to all publications</a></p>
+</article>

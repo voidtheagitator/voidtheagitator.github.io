@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description | escape }}">
+  <title>{% if page.title and page.title != 'Home' %}{{ page.title | escape }} — {% endif %}{{ site.title | escape }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="utility"><div class="wrap">THE SECRETARIAT · OFFICIAL ONLINE PRESENCE <span>EST. IN PRINCIPLE</span></div></div>
+  <header class="wrap masthead">
+    <a class="identity" href="{{ '/' | relative_url }}" aria-label="Return to home">
+      <span class="seal" aria-hidden="true">SQIM</span>
+      <span class="identity-text"><strong>The Status Quo<br>Immobilization Movement</strong><small>Office of the Permanent Secretariat</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/charter/' | relative_url }}">Charter</a>
+      <a href="{{ '/departments/' | relative_url }}">Departments</a>
+      <a href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a href="{{ '/membership/' | relative_url }}">Membership</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
+  </header>
+  <main class="wrap content">
+    {{ content }}
+  </main>
+  <footer>
+    <div class="wrap footer-grid"><div><strong>The Status Quo Immobilization Movement</strong><p>Securing yesterday. Today. Tomorrow.</p></div><div><strong>Legal and editorial notice</strong><p>This is a fictional organisation and satirical literary project. It is not an actual political organisation or public authority.</p></div></div>
+    <div class="wrap footnote">© {{ 'now' | date: '%Y' }} The Status Quo Immobilization Movement. All inertia reserved.</div>
+  </footer>
+</body>
+</html>
